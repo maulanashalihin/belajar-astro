@@ -8,9 +8,11 @@
         visible = true;
     })
 </script> 
-<div class="invisible text-xs">
-.
-</div>
+
 {#if visible}
 <img transition:scale={{ delay: 1000, duration: 1000 }} src="{src}" alt="">
+{:else}
+<div class="invisible h-28 text-xs">
+    .
+    </div>
 {/if}
