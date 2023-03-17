@@ -5,7 +5,7 @@ let name = "Maulana Shalihin"
 import { getCollection } from 'astro:content'; 
 
 const posts = (await getCollection('blog'))
- 
+import Price from "../components/price_calculator.svelte"
 
 ---
 
@@ -22,5 +22,8 @@ const posts = (await getCollection('blog'))
 			}
 		</ul>
 	</section>
+	<div >
+		<Price client:visible></Price>
+	</div>
  
 </Layout>
